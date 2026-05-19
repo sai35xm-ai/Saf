@@ -3,52 +3,112 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>كتاب طفلك المخصص بالذكاء الاصطناعي</title>
-  <meta name="description" content="أحصل على كتاب أطفال مخصص لطفلك حيث يصبح هو بطل القصة!">
+  <title>طفلك يصبح بطل قصته الخاصة ✨</title>
+  <meta name="description" content="اصنع كتابًا فاخرًا لطفلك يحوّله إلى بطل صفحة تلو الأخرى!">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Cairo:wght@400;800&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="hero-bg">
     <header class="header">
-      <h1>كتاب طفلك المخصص بالذكاء الاصطناعي</h1>
-      <p class="subtitle">دع طفلك يصبح بطل مغامرته الخاصة في كتاب مُصمم باسمه وصورته!</p>
+      <div class="media-block">
+        <!-- فيديو تعريفي قصير -->
+        <div class="video-wrapper">
+          <video src="video.mp4" poster="poster.jpg" controls loop muted playsinline aria-label="فيديو تعريفي قصير عن الكتاب" tabindex="0"></video>
+        </div>
+        <!-- صورة طفل -->
+        <img class="child-img" src="happy_child.png" alt="طفل سعيد يحمل كتابه المخصص">
+      </div>
+      <h1>طفلك يصبح بطل قصته الخاصة ✨</h1>
+      <p class="subtitle">حلم كل أم... كتاب فاخر لطفلك باسمه وصورته في قصة مؤثرة تحتفظون بها للأبد!</p>
     </header>
 
+    <!-- قسم نماذج البورتفوليو -->
+    <section class="portfolio">
+      <h2>نماذج من كتبنا</h2>
+      <div class="portfolio-row">
+        <div class="portfolio-book">
+          <img src="cover1.jpg" alt="غلاف كتاب مخصص ١">
+          <span class="caption">غلاف مخصص</span>
+        </div>
+        <div class="portfolio-book">
+          <img src="cover2.jpg" alt="غلاف كتاب مخصص ٢">
+          <span class="caption">غلاف مخصص</span>
+        </div>
+        <div class="portfolio-book">
+          <img src="cover3.jpg" alt="غلاف كتاب مخصص ٣">
+          <span class="caption">غلاف مخصص</span>
+        </div>
+      </div>
+      <div class="portfolio-row">
+        <div class="portfolio-page">
+          <img src="page1.jpg" alt="صفحة داخلية ١">
+        </div>
+        <div class="portfolio-page">
+          <img src="page2.jpg" alt="صفحة داخلية ٢">
+        </div>
+        <div class="portfolio-page">
+          <img src="page3.jpg" alt="صفحة داخلية ٣">
+        </div>
+      </div>
+    </section>
+
     <section class="features">
-      <h2>مميزات الكتاب</h2>
-      <ul>
-        <li>طفلك هو بطل القصة عبر 10 صفحات ممتعة وملونة</li>
-        <li>تصميم فريد بالذكاء الاصطناعي وصور مستوحاة من صورة طفلك</li>
-        <li>لغة بسيطة وقصص مشوقة</li>
-      </ul>
+      <div class="feature-item"><span class="icon">🎨</span> تصميم مخصص بالكامل</div>
+      <div class="feature-item"><span class="icon">⚡</span> تسليم سريع</div>
+      <div class="feature-item"><span class="icon">👦</span> مناسب للأطفال</div>
+      <div class="feature-item"><span class="icon">🌟</span> صور وقصص عالية الجودة</div>
+    </section>
+
+    <section class="rush-note">
+      <span>📦 نستقبل عدداً محدوداً من الطلبات يومياً لضمان الجودة والتسليم السريع بصيغة PDF عالية الدقة جاهزة للطباعة.</span>
+    </section>
+
+    <!-- قسم تقييمات العملاء -->
+    <section class="reviews">
+      <h2>أراء الأمهات</h2>
+      <div class="review-list">
+        <div class="review"> <span>"ابني انبسط جداً 😭"</span> </div>
+        <div class="review"> <span>"أفضل هدية لطفلي، لم يترك الكتاب قط!"</span> </div>
+        <div class="review"> <span>"تجربة رائعة وفريق محترم، شكراً من القلب"</span> </div>
+      </div>
     </section>
 
     <form class="order-form" enctype="multipart/form-data">
       <h2>اطلب الآن كتاب طفلك الشخصي</h2>
-      <label for="childName">اسم الطفل</label>
-      <input type="text" id="childName" name="childName" placeholder="اكتب اسم طفلك" required>
-
-      <label for="childAge">عمر الطفل</label>
-      <select id="childAge" name="childAge" required>
-        <option value="">اختر العمر</option>
-        <option value="3">٣ سنوات</option>
-        <option value="4">٤ سنوات</option>
-        <option value="5">٥ سنوات</option>
-        <option value="6">٦ سنوات</option>
-        <option value="7">٧ سنوات</option>
-        <option value="8">٨ سنوات</option>
-      </select>
-
-      <label for="childImage">ارفع صورة طفلك</label>
-      <input type="file" id="childImage" name="childImage" accept="image/*" required>
-
-      <button type="submit" class="cta-btn">احصل على كتاب طفلك المخصص الآن</button>
+      <div class="form-fields-compact">
+        <div class="field-group">
+          <label for="childName">اسم الطفل</label>
+          <input type="text" id="childName" name="childName" placeholder="اكتب اسم طفلك" required>
+        </div>
+        <div class="field-group">
+          <label for="childAge">عمر الطفل</label>
+          <select id="childAge" name="childAge" required>
+            <option value="">اختر العمر</option>
+            <option value="3">٣ سنوات</option>
+            <option value="4">٤ سنوات</option>
+            <option value="5">٥ سنوات</option>
+            <option value="6">٦ سنوات</option>
+            <option value="7">٧ سنوات</option>
+            <option value="8">٨ سنوات</option>
+          </select>
+        </div>
+        <div class="field-group">
+          <label for="childImage">ارفع صورة طفلك</label>
+          <input type="file" id="childImage" name="childImage" accept="image/*" required>
+        </div>
+      </div>
+      <button type="submit" class="cta-btn">اصنع كتاب طفلك 🎁</button>
     </form>
 
     <footer>
-      <p>جميع الحقوق محفوظة &copy; 2026 - مشروع Saf لصناعة كتب الأطفال بالذكاء الاصطناعي</p>
+      <p>جميع الحقوق محفوظة &copy; 2026 - Saf | صناعة كتب الأطفال الفاخرة بتقنيات حديثة</p>
     </footer>
+
+    <!-- زر واتساب عائم -->
+    <a href="https://wa.me/XXXXXXXXXXX" class="whatsapp-float" target="_blank" aria-label="تواصل عبر الواتساب">
+      <img src="whatsapp.svg" alt="واتساب">
+    </a>
   </div>
 </body>
 </html>
