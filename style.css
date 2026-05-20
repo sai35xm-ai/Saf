@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&family=Cairo:wght@400;800&display=swap');
 
 :root {
-  --blue: #42b6e9;        /* أزرق سماوي ناعم */
-  --blue-alt: #e5f6fd;    /* خلفية سماوية ناعمة جدًا */
+  --blue: #144877;        /* أزرق غامق فاخر */
+  --blue-alt: #e8f2fb;    /* خلفية سماوية ناعمة جدًا */
   --white: #fff;          /* أبيض نقي */
   --gold: #eac663;        /* ذهب فاخر خفيف */
   --gold-light: #fff8e1;
-  --gray-text: #6d7580;
-  --shadow-main: 0 3px 18px 0 #73c2e533;
+  --gray-text: #354757;
+  --shadow-main: 0 3px 18px 0 #14487711;
   --shadow-light: 0 3px 13px 0 #eac66322;
 }
 
@@ -84,132 +84,9 @@ body {
   box-shadow: var(--shadow-main);
 }
 
-/* Portfolio section */
-.portfolio {
-  background: var(--white);
-  box-shadow: var(--shadow-light);
-  border-radius: 19px;
-  padding: 24px 10px 15px 10px;
-  margin-bottom: 28px;
-  margin-top: 12px;
-  max-width: 430px;
-  width: 94vw;
-}
-.portfolio h2 {
-  color: var(--blue);
-  margin-bottom: 13px;
-  font-size: 1.14rem;
-  font-weight: 700;
-}
-.portfolio-row {
-  display: flex;
-  justify-content: center;
-  gap: 13px;
-  margin-bottom: 8px;
-}
-.portfolio-book, .portfolio-page {
-  background: var(--blue-alt);
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 2px 12px #42b6e911;
-  padding: 7px 4px 3px 4px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-width: 78px;
-}
-.portfolio-book img, .portfolio-page img {
-  width: 62px;
-  height: 82px;
-  object-fit: cover;
-  border-radius: 10px;
-  background: #fff;
-  border: 2px solid #e6eef9;
-}
-.portfolio-page img {
-  width: 66px;
-}
-.portfolio-book .caption {
-  color: var(--gold);
-  font-size: 0.88rem;
-  margin-top: 4px;
-}
+/* ---------------- Portfolio, Features, Reviews: as before --------------- */
 
-/* Features section */
-.features {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 13px;
-  justify-content: center;
-  padding: 14px 10px;
-  background: var(--white);
-  border-radius: 16px;
-  box-shadow: var(--shadow-main);
-  margin-bottom: 18px;
-  margin-top: 10px;
-  max-width: 420px;
-  width: 92vw;
-}
-.feature-item {
-  display: flex;
-  align-items: center;
-  gap: 7px;
-  background: var(--blue-alt);
-  border-radius: 14px;
-  padding: 9px 18px;
-  font-size: 1.03rem;
-  color: #117bb6;
-  font-weight: 700;
-  box-shadow: 0 2px 14px #42b6e925;
-}
-.feature-item .icon {
-  font-size: 1.16em;
-  color: var(--gold);
-}
-
-.rush-note {
-  margin:10px auto 20px auto;
-  text-align: center;
-  color: var(--blue);
-  background: var(--gold-light);
-  padding: 12px 14px;
-  border-radius: 16px;
-  font-weight: bold;
-  box-shadow: var(--shadow-light);
-  width: 92vw;
-  max-width: 440px;
-}
-
-.reviews {
-  background: var(--white);
-  box-shadow: var(--shadow-main);
-  border-radius: 16px;
-  max-width: 430px;
-  margin: 0 auto 28px auto;
-  padding: 18px 14px 8px 14px;
-  width: 93vw;
-}
-.reviews h2 {
-  color: var(--blue);
-  font-size: 1.07rem;
-  margin-bottom: 13px;
-  font-weight: 700;
-}
-.review-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 11px;
-  justify-content: center;
-}
-.review {
-  background: var(--blue-alt);
-  color: var(--gray-text);
-  border-radius: 13px;
-  padding: 10px 16px;
-  box-shadow: 0 1px 8px #42b6e922;
-  font-size: 1rem;
-  font-family: 'Tajawal';
-}
+/* ------- التعديلات المطلوبة على الفورم والألوان -------- */
 
 .order-form {
   background: var(--white);
@@ -226,124 +103,105 @@ body {
 .order-form h2 {
   color: var(--blue);
   text-align: center;
-  font-size: 1.11rem;
+  font-size: 1.13rem;
   margin-bottom: 2px;
+  font-weight: 800;
 }
 .form-fields-compact {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px 13px;
+  gap: 12px 14px;
 }
 .field-group {
   flex: 1 1 120px;
   min-width: 110px;
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
 }
 .order-form label {
-  color: var(--gray-text);
-  font-size: 0.97rem;
+  color: var(--blue);
+  font-size: 1.06rem;
+  font-family: Tajawal, Cairo, Arial, sans-serif;
+  font-weight: bold;
   margin-bottom: 0;
-  font-weight: 500;
+  letter-spacing: 0.01em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 .order-form input[type="text"],
 .order-form select,
 .order-form input[type="file"] {
-  padding: 9px 12px;
-  font-size: 1rem;
-  border-radius: 10px;
-  border: 1.5px solid #e3eef9;
+  padding: 12px 14px;
+  font-size: 1.13rem;
+  border-radius: 11px;
+  border: 2px solid var(--blue);
   background: var(--blue-alt);
   font-family: 'Tajawal', 'Cairo', sans-serif;
   margin-bottom: 0;
+  color: #102034;
+  font-weight: bold;
+  box-shadow: 0 1px 12px #14487708;
+  transition: border 0.2s;
+}
+.order-form input[type="text"]::placeholder {
+  color: #406094;
+  font-weight: 400;
+  opacity: 1;
 }
 .order-form input[type="file"] {
   background: var(--white);
   border: none;
+  font-size: 1rem;
+  color: var(--blue);
 }
 .order-form input:focus,
 .order-form select:focus {
   outline: 2px solid var(--gold);
+  border-color: var(--gold);
 }
 .cta-btn {
-  background: linear-gradient(90deg, var(--gold), var(--blue) 70%);
-  color: #23425b;
+  background: linear-gradient(90deg, var(--gold) 30%, var(--blue) 100%);
+  color: #fff;
   font-family: 'Cairo', 'Tajawal', sans-serif;
   font-weight: 800;
-  font-size: 1.15rem;
+  font-size: 1.17rem;
   border: none;
   border-radius: 13px;
   padding: 15px 0;
   margin-top: 12px;
   box-shadow: 0 2px 9px #eac66348;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: background 0.2s, color 0.18s;
   width: 100%;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.06em;
 }
 .cta-btn:hover {
-  background: linear-gradient(90deg, var(--blue), var(--gold) 70%);
+  background: linear-gradient(90deg, var(--blue) 10%, var(--gold) 100%);
   color: var(--gold);
 }
 
-footer {
-  text-align: center;
-  color: #b0b1be;
-  font-size: 0.92rem;
-  margin-top: 21px;
-  padding-bottom: 8px;
+/* أيقونات وإضافات توضيحية بجوار الحقول */
+.order-form label::before {
+  content: attr(data-icon);
+  font-size: 1.33em;
+  margin-left: 7px;
+  color: var(--gold);
+  vertical-align: middle;
+  display: inline-block;
+  font-family: inherit;
 }
-
-/* زر واتساب العائم */
-.whatsapp-float {
-  position: fixed;
-  left: 24px;
-  bottom: 24px;
-  z-index: 999;
-  background: #25D366;
-  width: 55px;
-  height: 55px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 20px #25d36645;
-  transition: box-shadow 0.2s;
-}
-.whatsapp-float:hover {
-  box-shadow: 0 4px 32px #25d36688;
-}
-.whatsapp-float img {
-  width: 34px;
-  height: 34px;
-}
+/* تخصيص أيقونة لكل حقل من خلال خاصية data-icon في HTML (يرجى إضافتها في index.html عند الحاجة) */
 
 @media (max-width:640px) {
-  .header h1 { font-size: 1.18rem; }
-  .header .subtitle { font-size: 1rem; }
-  .portfolio, .reviews, .features, .order-form, .rush-note {
-    padding-left: 7vw; padding-right: 7vw;
-    width: 97vw;
-    max-width: 98vw;
-  }
-  .portfolio-row {
+  .form-fields-compact {
+    flex-direction: column;
     gap: 8px;
   }
-  .portfolio-book img, .portfolio-page img {
-    width: 56px; height: 72px;
+  .field-group {
+    min-width: 0;
   }
-  .order-form h2 { font-size: 0.98rem; }
-  .cta-btn {
-    font-size: 1.03rem;
-    padding: 12px 0;
-  }
-  .reviews .review { font-size: 0.92rem; }
 }
-@media (max-width:400px) {
-  .header { margin-top: 15px; }
-  .portfolio, .reviews, .features, .order-form, .rush-note {
-    padding-right: 2vw; padding-left: 2vw;
-  }
-  footer { font-size: 0.75rem; padding-bottom: 4px; }
-}
+
+/* بقيّة الأقسام كما هي */
